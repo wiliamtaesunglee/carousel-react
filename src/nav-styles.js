@@ -25,6 +25,10 @@ const next = {
   textAlign: 'right'
 }
 
+const hidden = {
+  visibility: 'hidden'
+}
+
 export default {
   root: {
     position: 'absolute',
@@ -34,5 +38,13 @@ export default {
     display: 'flex'
   },
   prev,
-  next
+  prevHidden: {
+    ...prev,
+    ...hidden
+  },
+  next,
+  nextHidden: {
+    ...next,
+    ...hidden
+  }
 }
